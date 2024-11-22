@@ -1,0 +1,122 @@
+body {
+    background-color: #F7F5F2;
+    color: #333333;
+}
+
+header {
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header h1 {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #FFCCB6;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #FFCCB6;
+    margin: 5px auto;
+    padding: 5px;
+    max-width: fit-content;
+    background-color: #FFEFD3;
+    border-radius: 8px;
+}
+
+.nav {
+    text-align: center;
+    margin: 10px;
+}
+
+button {
+    text-align: center;
+    border: 1px solid #FFABAB;
+    margin: 2px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #FFD3B6;
+    color: #333333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFAAA5;
+    color: #FFFFFF;
+}
+
+.page {
+    color: #333333;
+    border: 1px solid #85E3FF;
+    padding: 6px 12px;
+    margin: 5px;
+    background-color: #B9FBC0;
+    display: inline-block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page.active {
+    background-color: #FFCCB6;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.page:hover {
+    background-color: #FFABAB;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .pagination {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .page {
+        padding: 4px 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+        margin: 10px;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .pagination {
+        padding: 8px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .page {
+        padding: 2px 6px;
+        margin: 3px;
+    }
+}
