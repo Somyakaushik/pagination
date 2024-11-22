@@ -1,17 +1,25 @@
 const pages = document.querySelectorAll(".page");
-const prevButton = document.querySelector(".prev"); 
-const nextButton = document.querySelector(".next"); 
+const content = document.getElementById("content");
 
-let currentPage = 0; 
+const pageData = [
+    "Welcome to Page 1.",
+    "Hello! This is Page 2.",
+    "You're on Page 3.",
+    "Welcome to Page 4.",
+    "This is Page 5."
+];
+
+let currentPage = 0;
 
 const updatePages = () => {
     pages.forEach((page, index) => {
         if (index === currentPage) {
-            page.classList.add("active"); 
+            page.classList.add("active");
         } else {
-            page.classList.remove("active"); 
+            page.classList.remove("active");
         }
     });
+    content.innerHTML = `<p>${pageData[currentPage]}</p>`;
 };
 
 const goPrev = () => {
@@ -27,19 +35,16 @@ const goNext = () => {
     if (currentPage < pages.length - 1) {
         currentPage++;
     } else {
-        currentPage = 0; 
+        currentPage = 0;
     }
     updatePages();
 };
 
 pages.forEach((page, index) => {
     page.addEventListener("click", () => {
-        currentPage = index; 
+        currentPage = index;
         updatePages();
     });
 });
-
-prevButton.addEventListener("click", goPrev);
-nextButton.addEventListener("click", goNext);
 
 updatePages();
