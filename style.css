@@ -18,9 +18,13 @@ header h1 {
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
 }
 
+header p{
+    color: #B9FBC0;
+}
+
 .pagination {
     display: flex;
-    flex-wrap: wrap; /* Enable wrapping */
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     border: 2px solid #FFCCB6;
@@ -46,7 +50,7 @@ button {
     color: #333333;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 button:hover {
