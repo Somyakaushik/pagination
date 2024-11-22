@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagination</title>
+    <title>Pagination with Data</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <h1>Pagination</h1>
+
+        <div id="content">
+            <p>Welcome to Page 1. This is the content for the first page.</p>
+        </div>
     </header>
+
+
 
     <div class="pagination">
         <div class="page">1</div>
@@ -22,14 +28,14 @@
 
     <div class="nav">
         <button onclick="goPrev()">
-            &#8592;
-            <!-- prev -->
+            &#8592; <!-- Previous -->
         </button>
         <button onclick="goNext()">
-            &#8594;
-            <!-- next -->
+            &#8594; <!-- Next -->
         </button>
     </div>
+
+
     <script src="script.js"></script>
 </body>
 </html>
